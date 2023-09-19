@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-style: poppins;
+}
+
+body {
+    /* background: black ! important; */
+    background-image: url(./WhatsApp\ Image\ 2023-08-25\ at\ 2.32.32\ PM.jpeg);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    min-height: 65vh;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.9s;
+}
+
+/* @media(min-width:1440px)
+{
+    .service{
+        height: 450px;
+    }
+}
+@media(min-width:768px)
+{
+    .service{
+        height: 450px;
+        flex-direction: column;
+    }
+} */
+.service-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: -90px auto 0;
+    background: #fff;
+    border: 18px solid #007bff;
+}
+
+.service-logo i {
+    width: 50px;
+    margin-top: 20px;
+    transition: transform 1s;
+    font-size: 25px;
+}
+
+.service h4 {
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin: 50px auto;
+    position: relative;
+}
+
+.service h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #007bff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #007bff, #fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadowOne {
+    height: 200px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .08s;
+
+}
+
+.shadowTwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 18%;
+    z-index: -2;
+}
+
+.main:hover .service {
+    transform: translateY(-50px);
+
+}
+
+.main:hover .shadowOne {
+    transform: translateY(-25px);
+
+}
+
+.main:hover i {
+    transform: rotate(360deg);
+
+}
+
+
+
+@media (max-width: 400px) {
+    .main {
+        width: 100%;
+
+        margin-top: 5vh;
+    }
+}
+
+
+
+
+@media (max-width: 768px) and (min-width:400px) {
+    .main {
+        width: 100%;
+
+        margin-top: -10vh;/* min-height: 45vh; */
+    }
+}
+
+
+
+@media (max-width: 300px) and (min-width:250px){
+    .main {
+        width: 100%;
+
+        margin-top: 20vh;/* min-height: 45vh; */
+    }
+}
+
+
+@media (max-width: 768px) and (min-width:768px){
+    .main {
+        width: 100%;
+
+        margin-top: -25vh;/* min-height: 45vh; */
+    }
+}
+
+
+@media (max-width: 992px) and (min-width:768px){
+    .main {
+        margin-top: -25vh;/* min-height: 45vh; */
+    }
+}
+
